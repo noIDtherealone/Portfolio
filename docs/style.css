@@ -41,3 +41,6 @@ figcaption {
     font-size: large;
     color: orange; 
 }
+.featureBlock a {
+    color: #00ff00;
+}
