@@ -1,20 +1,43 @@
 body {
 
     /*background:papayaWhip*/
-    background: LightSteelBlue;
-    font-family: Comic-sans, Arial, Helvetica, sans-serif;
+    background: black;
+    color: #00ff00;
+    font-family:  Monofonto,Press-Start-2P,VT323,Comic-sans, Arial, Helvetica, sans-serif;
+    caret-color: green;
 }
 
 div.side-by-side {
     display: flex;
+    justify-content: center;
+    gap: 5em;
+    
 }
-
+.side_by_side {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.side_by_side figure {
+    text-align: center;
+}
+.side_by_side img {
+    width: 15em;
+    height: auto;
+    padding: 3em;
+}
 img {
     width: 59%;
     max-width: 500px;
 }
+figcaption {
+    background: green;
+}
+
 
 .featureBlock {
-    background-color:pink;
-    font-size: smaller;
+    text-align: center;
+    background-color:green;
+    font-size: large;
+    color: orange; 
 }
