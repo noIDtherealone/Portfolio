@@ -6,7 +6,8 @@ body {
     font-family:  Monospace,Press-Start-2P,VT323,Comic-sans, Arial, Helvetica, sans-serif;
     caret-color: green;
     max-width: 1000px;
-    margin:auto;
+    width:100%;
+    margin:0 auto;
         text-shadow:
         0 0 5px #00ff00,
         0 0 10px #00ff00,
@@ -68,11 +69,14 @@ div.side-by-side {
 img {
     width: 59%;
     max-width: 500px;
-    border: 3px solid #00ff00;
-    padding: 5px;
+    border: 2px solid #00ff00;
+    height:auto;
+    margin:0 auto;
 }
 .center-photo {
     text-align: center;
+    height:auto;
+    margin:auto;
 }
 figcaption.first {
     background: green;
@@ -98,6 +102,10 @@ p{
     background-color:green;
     font-size: larger; 
     padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .featureBlock a {
     color: #00ff00;
@@ -114,9 +122,35 @@ p{
     background-color: #00ff00;
     color: black;
 }
+@media (max-width: 768px) {
+    .featureBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 p.downer {
     background: green;
     color: #00ff00;
     text-align: center;
     
+}
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+    }
 }
