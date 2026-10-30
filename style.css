@@ -7,7 +7,7 @@ body {
     caret-color: green;
     max-width: 1000px;
     width:100%;
-    margin:auto;
+    margin:0 auto;
         text-shadow:
         0 0 5px #00ff00,
         0 0 10px #00ff00,
@@ -69,12 +69,14 @@ div.side-by-side {
 img {
     width: 59%;
     max-width: 500px;
-    border: 3px solid #00ff00;
-    padding: 5px;
+    border: 2px solid #00ff00;
     height:auto;
+    margin:0 auto;
 }
 .center-photo {
     text-align: center;
+    height:auto;
+    margin:auto;
 }
 figcaption.first {
     background: green;
@@ -119,6 +121,12 @@ p{
 .featureBlock :hover {
     background-color: #00ff00;
     color: black;
+}
+@media (max-width: 768px) {
+    .featureBlock {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 p.downer {
     background: green;
