@@ -126,3 +126,23 @@ p.downer {
     text-align: center;
     
 }
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+    }
+}
